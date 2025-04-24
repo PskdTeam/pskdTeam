@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PskdTeam</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            min-height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .left-side {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-right: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .right-side {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .news-item {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ff4d4d;
+            transition: transform 0.3s;
+        }
+        
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4d79ff;
+        }
+        
+        a {
+            color: #f9cb28;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #ff4d4d;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .left-side {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PskdTeam</h1>
+    </header>
+    
+    <div class="container">
+        <div class="left-side">
+            <div class="section">
+                <h2>Наши партнеры</h2>
+                <p>Мы сотрудничаем с каналом <a href="https://t.me/lrks_team" target="_blank">https://t.me/lrks_team</a></p>
+            </div>
+            
+            <div class="section">
+                <h2>Важная информация</h2>
+                <p>Бот работает не круглосуточно и много тех. работ.</p>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <h2>Новости</h2>
+            
+            <div class="news-item">
+                <p>Скоро будет полноценный релиз бота <a href="https://t.me/pskdTeamBot" target="_blank">https://t.me/pskdTeamBot</a></p>
+            </div>
+            
+            <div class="news-item">
+                <p>Мы объявляем войну телеграм каналу @igshpravda</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
