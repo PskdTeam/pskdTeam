@@ -190,21 +190,23 @@
                 font-size: 1.8rem;
             }
         }
-        .rainbow-link {
-            background: linear-gradient(270deg, #ff4d4d, #f9cb28, #4d79ff, #ff4d4d);
-            background-size: 800% 800%;
+        .gradient-text {
+            font-weight: bold;
+            font-size: 1.2em;
+            background: linear-gradient(90deg, #ff4d4d, #f9cb28, #4d79ff, #ff4d4d);
+            background-size: 300% 300%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            animation: flow 6s ease infinite;
             text-decoration: underline;
-            font-weight: bold;
-            animation: rainbow 8s ease infinite;
         }
 
-@keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+        @keyframes flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
 
     </style>
 </head>
@@ -229,9 +231,10 @@
                 <h2>Важная информация</h2>
                 <p>Бот работает не круглосуточно и много тех. работ.</p>
                 <p style="margin-top:10px;">
-                    <a href="https://t.me/ilusha_shlusha69" target="_blank" class="rainbow-link">Слив Ильи ИГШ(кликни)</a>
-                </p>
-            </div>
+                <a href="https://t.me/ilusha_shlusha69" target="_blank" class="gradient-text">Слив Ильи игш</a>
+            </p>
+        </div>
+
 
 
         </div>
