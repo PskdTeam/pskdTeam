@@ -190,6 +190,22 @@
                 font-size: 1.8rem;
             }
         }
+        .rainbow-link {
+            background: linear-gradient(270deg, #ff4d4d, #f9cb28, #4d79ff, #ff4d4d);
+            background-size: 800% 800%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: underline;
+            font-weight: bold;
+            animation: rainbow 8s ease infinite;
+        }
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
     </style>
 </head>
 <body>
@@ -213,9 +229,10 @@
                 <h2>Важная информация</h2>
                 <p>Бот работает не круглосуточно и много тех. работ.</p>
                 <p style="margin-top:10px;">
-                    <a href="https://t.me/ilusha_shlusha69" target="_blank" style="background: linear-gradient(90deg, #ff4d4d, #f9cb28, #4d79ff); -webkit-background-clip: text; color: transparent; font-weight: bold; text-decoration: underline;">Слив Ильи игш</a>
+                    <a href="https://t.me/ilusha_shlusha69" target="_blank" class="rainbow-link">Слив Ильи ИГШ(кликни)</a>
                 </p>
             </div>
+
 
         </div>
         
